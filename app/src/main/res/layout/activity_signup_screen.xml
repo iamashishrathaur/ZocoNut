@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             tools:ignore="RtlSymmetry"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             android:autofillHints="emailAddress" />
 
         <TextView

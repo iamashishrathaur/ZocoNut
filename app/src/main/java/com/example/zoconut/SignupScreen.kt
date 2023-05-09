@@ -40,7 +40,7 @@ class SignupScreen : AppCompatActivity() {
         val myRef= FirebaseDatabase.getInstance().getReference("user")
         val user= User(name, email,pass)
 
-        myRef.child(email).setValue(user).addOnSuccessListener {
+        myRef.setValue(user).addOnSuccessListener {
             val sharedPreferences: SharedPreferences =getSharedPreferences("user", MODE_PRIVATE)
             val editor: SharedPreferences.Editor=sharedPreferences.edit()
             editor.putString("name",name)
