@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1F2F3F"
+    tools:context=".LoginScreen">
+    <TextView
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="200dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:id="@+id/login_email"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:textColor="@color/white"
+        android:textColorHint="#777B83"
+        android:paddingStart="10dp"
+        android:hint="Enter Email"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        tools:ignore="RtlSymmetry"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress" />
+    <TextView
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:id="@+id/login_password"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:textColor="@color/white"
+        android:hint="Password"
+        android:textColorHint="#777B83"
+        android:paddingStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:inputType="textPassword"
+        tools:ignore="RtlSymmetry"
+        android:autofillHints="password" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/log_in"
+        android:elevation="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="Log in"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_login"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/sign_up_click"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            tools:ignore="UselessParent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="New Here? "
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
